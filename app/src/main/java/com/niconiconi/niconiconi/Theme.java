@@ -19,6 +19,10 @@ public class Theme extends AppCompatActivity {
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         setContentView(R.layout.theme);
+        bt1 = (ImageButton)findViewById(R.id.bt1);
+        bt2 = (ImageButton)findViewById(R.id.bt2);
+        bt3 = (ImageButton)findViewById(R.id.bt3);
+        bt4 = (ImageButton)findViewById(R.id.bt4);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +44,7 @@ public class Theme extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        bt3.setOnClickListener(new View.OnClickListener() {
+        bt4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Theme.this,Subway.class);
