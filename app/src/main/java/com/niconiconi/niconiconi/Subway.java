@@ -3,6 +3,7 @@ package com.niconiconi.niconiconi;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,7 +27,7 @@ public class Subway extends AppCompatActivity {
         li = (ListView)findViewById(R.id.li1);
         li.setAdapter(lia);
 
-        //lia.addItem(ContextCompat.getDrawable(this,));
+        lia.addItem(ContextCompat.getDrawable(this,R.mipmap.sinrim));
 
         li.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
